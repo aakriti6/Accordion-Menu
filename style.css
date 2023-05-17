@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lato",sans-serif;
+}
+
+html{
+    color: #24305f;
+}
+
+body{
+    background: #fffdfb;
+}
+.accordion{
+    width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.items{
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+    text-shadow: #24305f;
+}
+
+.number{
+    font-size: 32px;
+}
+
+
+.icon{
+    width: 24px;
+    height: 24px;
+    color: #1864ab;
+}
+
+.hiddenBox{
+    grid-column: 2/3 ;
+    display: none;
+    transition: max-height 0.2s ease-out;
+}
+
+.hiddenBox p{
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+
+.active .hiddenBox{
+    display: block;
+}
